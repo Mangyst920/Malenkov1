@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <map name="imagemap">
+        <area shape="rect" coords="0,0,270,350" href="index.html" alt="Прямоугольная область">
+        <area shape="circle" coords="337,300,44" href="index.html" alt="Круглая область">
+    </map>
+   <ul>
+    <li><a href="kubsu.ru">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></li> 
+    <li><a href="https://kubsu.ru/?ysclid=m0xifbexyf534301569">абсолютную на главную сайта kubsu.ru в протоколе https</a></li> 
+    <li><a href="index.html"><img src="image.jpg" style="width: 300px; height: 300px;"></a></li> 
+    <li><a href="/">сокращенную ссылку на внутреннюю страницу</a></li> 
+    <li><a href="/index.html">сокращенную ссылку на главную страницу</a></li>
+    <li><a href="#p1">ссылку на фрагмент текущей страницы</a></li>
+    <li><a href="#p0" title="пp1" id="p2">ссылку с тремя параметрами в URL</a></li>
+    <li><a href="#p2" id="p3">ссылку с параметром id в URL</a></li>
+    <li><a href="index.html">относительную на страницу в текущем каталоге</a></li>
+    <li><a href="about/index.html">относительную на страницу в каталоге about;</a></li>
+    <li><a href="../index.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
+    <li><a href="../../index.html"> относительную на страницу в каталоге двумя уровнями выше</a></li>
+
+
+    <li><img src="image.jpg" usemap="#imagemap" alt="Карта изображения" style="width: 300px; height: 300px;"></li> 
+
+
+    <li><a href="text.html#bottom">ссылку на фрагмент страницы стороннего сайта;</a></li>
+    <li><a href="">ссылку с пустым href</a></li>
+    <li><a>ссылку без href;</a></li>
+    <li><a href="" rel="nofollow">ссылку, по которой запрещен переход поисковикам;</a></li>
+    <li><a href="" rel="nofollow sponsored">запрещенную для индексации поисковиками; </a></li>
+    <li><ol>
+                <li><a href="index.html" title="Описание первой ссылки">Первая ссылка</a></li>
+                <li><a href="index.html" title="Описание второй ссылки">Вторая ссылка</a></li>
+            </ol></li>
+    <li><a href="ftp://pete@ftp.someserver.com/program.txt">ссылку на файл на сервере FTP с авторизацией;</a></li>
+
+</ul>
+
+<form  method="post">
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="dob">Дата рождения:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label>Пол:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Мужской</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Женский</label><br><br>
+        <label for="languages">Любимый язык программирования:</label>
+        <select id="languages" name="languages" multiple>
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskell">Haskell</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+        </select><br><br>
+
+        <label for="bio">Биография:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+
+        <input type="checkbox" id="contract" name="contract">
+        <label for="contract">С контрактом ознакомлен (а)</label><br><br>
+
+        <input type="submit" value="Сохранить">
+    </form>
+</body>
+</html>

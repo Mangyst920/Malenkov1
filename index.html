@@ -7,8 +7,8 @@
 </head>
 <body>
     <map name="imagemap">
-        <area shape="rect" coords="10,10,270,350" href="index.html" alt="Прямоугольная область">
-        <area shape="circle" coords="337,300,44" href="index.html" alt="Круглая область">
+        <area shape="rect" coords="440,111,779,338" href="index.html" alt="Прямоугольная область">
+        <area shape="circle" coords="270,200,100" href="index.html" alt="Круглая область">
     </map>
    <ul>
     <li><a href="kubsu.ru">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></li> 
@@ -17,7 +17,7 @@
     <li><a href="/">сокращенную ссылку на внутреннюю страницу</a></li> 
     <li><a href="/index.html">сокращенную ссылку на главную страницу</a></li>
     <li><a href="#p1">ссылку на фрагмент текущей страницы</a></li>
-    <li><a href="index.html" title="пp1" id="p2">ссылку с тремя параметрами в URL</a></li>
+    <li><a href="/index.html?p1=1&p2=2&p3=3">ссылку с тремя параметрами в URL</a></li>
     <li><a href="#p2" id="p3">ссылку с параметром id в URL</a></li>
     <li><a href="index.html">относительную на страницу в текущем каталоге</a></li>
     <li><a href="about/index.html">относительную на страницу в каталоге about;</a></li>
@@ -25,7 +25,7 @@
     <li><a href="../../index.html"> относительную на страницу в каталоге двумя уровнями выше</a></li>
 
 
-    <li><img src="image.jpg" usemap="#imagemap" alt="Карта изображения" style="width: 300px; height: 300px;"></li> 
+    <li><img src="photo.png" usemap="#imagemap" alt="Карта изображения" ></li> 
 
 
     <li><a href="text.html#bottom">ссылку на фрагмент страницы стороннего сайта;</a></li>
@@ -38,7 +38,6 @@
                 <li><a href="index.html" title="Описание второй ссылки">Вторая ссылка</a></li>
             </ol></li>
     <li><a href="ftp://pete@ftp.someserver.com/personal.txt">ссылку на файл на сервере FTP с авторизацией;</a></li>
-
 </ul>
 
 <form  method="post">
@@ -56,7 +55,7 @@
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Женский</label><br><br>
         <label for="languages">Любимый язык программирования:</label>
-        <select id="languages" name="languages" multiple>
+        <select id="languages" name="languages" multipl name="lang[]">
             <option value="pascal">Pascal</option>
             <option value="c">C</option>
             <option value="cpp">C++</option>
